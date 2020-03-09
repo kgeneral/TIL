@@ -1,7 +1,7 @@
 # Optional
 
 ## Inproper usage for optional
-- Just for single-conditioned before single-assignment : Optional is a **_costly_** operation.
+- Just for single-condition before single-assignment : Optional is a **_costly_** operation.
 ```Java
 // AVOID
 String status = Optional.ofNullable(status).orElse("PENDING");
