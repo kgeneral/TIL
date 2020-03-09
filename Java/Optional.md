@@ -1,6 +1,6 @@
 # Optional
 
-## Inproper usage for optional
+## Improper usage for optional
 - Just for single-condition before single-assignment : Optional is a **_costly_** operation.
 ```Java
 // AVOID
