@@ -4,7 +4,9 @@
 - :(colon) : change mode, search string or regex pattern
 - _n_ dd (or dd _n_) : delete _n_ lines
 - ^ : Beginning of line
+- a : Beginning of line + insert mode
 - $ : End of line
+- A : End of line + insert mode
 - Ctrl + [ : Goto prev "paragraph"
 - Ctrl + ] : Goto next "paragraph"
 - /word/ : Goto line contains "word"
