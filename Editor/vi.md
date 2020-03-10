@@ -10,4 +10,5 @@
 - /word/ : Goto line contains "word"
 
 ## Cheat sheet
+- https://i0.wp.com/www.insightbook.co.kr/wp-content/uploads/2012/04/Vim_%EB%AA%85%EB%A0%B9%EC%96%B4_%EB%8B%A8%EC%B6%95%ED%82%A4.jpg?zoom=2&resize=614%2C450
 - http://www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf
