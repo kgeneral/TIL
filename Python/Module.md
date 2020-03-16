@@ -22,10 +22,14 @@ class MailSender:
     def send(self, sender, receiver, subject, body):
         pass
 
+
+
 class MockMailSender(MailSender):
     def send(self, sender, receiver, subject, body):
         #...
-       
+
+
+
 class SmtpMailSender(MailSender):
     def send(self, sender, receiver, subject, body):
         #...
