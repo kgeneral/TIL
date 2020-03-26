@@ -1,6 +1,6 @@
 # Jackson
 
-## Deserialize with only constructor(without setter)
+## Deserialize with constructors only(without setter)
 ```Java
 @Getter
 public class PersonDto {
