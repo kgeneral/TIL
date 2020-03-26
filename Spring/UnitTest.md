@@ -17,3 +17,27 @@ test {
 
 // ...
 ```
+## Mock test with 'mockwebserver' for Spring WebClient
+- Basic @Mockbean is not work properly.
+- Need to update 'okhttp' version in gradle(upper 3.10)
+```gradle
+    testImplementation "com.squareup.okhttp3:mockwebserver"
+    testImplementation "com.squareup.okhttp3:okhttp:3.14.6"
+```
+- Test example : https://github.com/spring-projects/spring-framework/blob/master/spring-webflux/src/test/java/org/springframework/web/reactive/function/client/WebClientIntegrationTests.java
+```Java
+
+	@ParameterizedWebClientTest
+	void shouldReceiveJsonAsString(ClientHttpConnector connector) {
+		startServer(connector);
+
+        // use mock json string as response.
+        // specific uri is not possible. one server - one mock request
+        // need to overwrite for each test case
+		String content = "{\"bar\":\"barbar\",\"foo\":\"foofoo\"}";
+		prepareResponse(response -> response
+				.setHeader("Content-Type", "application/json").setBody(content));
+        // ...
+    
+    
+```
