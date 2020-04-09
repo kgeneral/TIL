@@ -8,6 +8,6 @@
 
 ## Eclipse MAT
 - https://www.eclipse.org/mat/
-- JRE 1.8 or above required.
+- required JRE 1.8 or above.
 
 
