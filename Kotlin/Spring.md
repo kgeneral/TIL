@@ -18,8 +18,8 @@ class SqlTemplate {
     @Value("\${table.schema}")
     private lateinit var tableSchema: String
     
-    // cannou use 'val' : var 'tableSchema' loads lazy
-    internal var getMemberAgeForId: String = "select age from $tableSchema.member where id = ?"
+    // cannot use 'val' or 'var' : 'tableSchema' loads lazy
+    fun getMemberAgeForId(): String = "select age from $tableSchema.member where id = ?"
 
 }
 ```
