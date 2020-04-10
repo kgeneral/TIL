@@ -13,13 +13,7 @@ table:
 ```
 ```Kotlin
 @Component
-class SqlTemplate {
-
-    @Value("\${table.schema}")
-    private lateinit var tableSchema: String
-    
-    // cannot use 'val' or 'var' : 'tableSchema' loads lazy
+class SqlTemplate(@Value("\${table.schema}") private var tableSchema: String) {
     fun getMemberAgeForId(): String = "select age from $tableSchema.member where id = ?"
-
 }
 ```
