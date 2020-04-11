@@ -1,8 +1,8 @@
 # Package strategy
 
 ## export function
-- Use *uppercase character* for function name 
 - callable function for other packages
+- Use first character as *uppercase* for function name to export.  
 ```Go
 package data_parser
 
