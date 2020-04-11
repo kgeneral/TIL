@@ -4,7 +4,7 @@
 - callable function for other packages
 - Use first character as *uppercase* for function name to export.  
 ```Go
-package data_parser
+package dataparser
 
 // private
 func init() {
