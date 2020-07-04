@@ -3,9 +3,8 @@
 
 # Find DNS From Fargate application
 - Cluster > (name of cluster) > Service > (name of service) > (target group name) 
-```
-http://(target group name).ap-northeast-2.elb.amazonaws.com:(port)/
-```
+- Select 'Load Balancer' from left sidebar
+- find DNS from 'DNS Name' below
 
 # Using docker
 
