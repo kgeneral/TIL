@@ -1,3 +1,17 @@
+# From Oracle JDK 8 to OpenJDK 11
+
+## GC Options
+- https://opennms.discourse.group/t/migration-of-jvm-settings-from-oracle-jdk-8-to-openjdk-11/365
+```bash
+-Xlog:gc*                                              # Equivalent to PrintGCDetails
+-Xlog:::time,uptime,level,tags"                        # Equivalent to PrintGCTimeStamps, Uptime and PrintGCDateStamps
+-Xlog:safepoint"                                       # Print time elapsed from last pause
+-Xlog:gc:/gc.log:time,uptime:filecount=4,filesize=20M" # Log to a file with logrotate
+
+# Best practice to debug GC or Memory problem
+-Xlog:gc*,gc+phases=debug:file=/opt/opennms/logs/gc.log:time,pid,tags:filecount=10,filesize=20m
+```
+
 # Check detailed infos for installed jdk
 
 ```bash
